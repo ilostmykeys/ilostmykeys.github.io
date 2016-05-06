@@ -21,6 +21,7 @@ body { background-color: #890620; }
 }
 @media screen and (max-width: 650px ) { #page-container { width: 500px; } }
 @media screen and (max-width: 550px ) { #page-container { width: 400px; } }
+@media screen and (max-width: 500px ) { #page-container { width: 100%; } }
 
 .row:after { content: ''; display: table; clear: both; }
 .row .col-left { float: left; }
