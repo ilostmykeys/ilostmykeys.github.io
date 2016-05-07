@@ -5,6 +5,17 @@
 html, body { width: 100%; height: 100%; }
 body { background-color: #890620; }
 
+body { font-family: 'Open Sans', sans-serif; }
+body a:link, .about a:visited { color: #D60000; }
+h2 { margin: 10px 0; font-size: 27px; font-weight: bolder; }
+p { margin-bottom: 20px; font-size: 22px; }
+img { box-shadow: 0 0 10px black; }
+
+@media screen and (max-width: 1200px) {
+	h2 { font-size: 24px; }
+	p { margin-bottom: 10px; font-size: 20px; } 
+}
+
 #page-container { width: 1400px; margin: 0 auto; background-color: #EBEBE0; box-shadow: 0 0 20px black; }
 .group-content { width: 95%; margin: 20px auto; }
 
@@ -13,7 +24,7 @@ body { background-color: #890620; }
 @media screen and (max-width: 1050px) { #page-container { width: 800px; } }
 @media screen and (max-width: 850px ) {
 	#page-container { width: 700px; }
-	.group-content { width: 99%; margin: 20px auto; }
+	.group-content { width: 97%; margin: 20px auto; }
 }
 @media screen and (max-width: 750px ) {
 	#page-container { width: 600px; }
@@ -24,12 +35,25 @@ body { background-color: #890620; }
 @media screen and (max-width: 500px ) { #page-container { width: 100%; } }
 
 .row:after { content: ''; display: table; clear: both; }
-.row .col-left { float: left; }
-.row .col-right { float: right; }
+.row .col-left { float: left; width: 45%; }
+.row .col-right { float: right; width: 45%; }
+
+.link-stylish-container { position: relative; display: inline; }
+.link-stylish-container a:link, a:visited { color: #D60000; margin: 30px 0; }
+.link-arrow {  opacity: 0; transition: all .3s ease-in-out; position: absolute; left: -15px; bottom: 4px; color: #D60000; }
+.link-stylish-container:hover .link-arrow { opacity: 1; transform: rotate(90deg); }
+.link-stylish-container:active .link-arrow { left: 105%; }
+
+.link-big a:link, .link-big a:visited { font-size: 22px; }
+.link-small a:link, a:visited { font-size: 19px; }
+.link-small .link-arrow { font-size: 13px; }
+
+.italic { font-style: italic; }
+.banner-full { margin: 20px 0; }
 
 /* PAGE LOGO */
 
-#page-header header { padding: 10px; text-shadow: 2px 2px 4px rgba(137,6,32,.8)}
+#page-header header { padding: 10px; text-shadow: 2px 2px 4px rgba(137,6,32,.8); }
 #page-logo { line-height: 0; padding: 20px; font-size: 33px; font-family: 'Pacifico', cursive; }
 #page-logo-sub { margin: 0 0 10px 80px; line-height: 15px; font-size: 20px; font-family: 'Handlee', cursive; }
 
@@ -49,10 +73,14 @@ body { background-color: #890620; }
 	font-size: 23px;
 	font-weight: 100;
 }
-#main-nav li { list-style: none; display: inline-block; padding: 20px; }
-#main-nav a:link, #main-nav a:visited { text-decoration: none; color: white; transition: all .2s ease-in-out; }
-#main-nav a:hover { text-shadow: 0 0 3px white; }
-#main-nav .active:link, #main-nav .active:visited { padding: 10px 25px; background-color: #EBD4CB; border-radius: 2px; color: black; text-shadow: 0 0 1px black; }
+#main-nav li { list-style: none; display: inline-block; padding: 20px 0; }
+#main-nav li:first-of-type { margin-left: 20px; }
+
+#main-nav a:link, #main-nav a:visited { text-decoration: none; color: white; transition: all .2s ease-in-out; padding: 10px 25px; border-radius: 2px; }
+#main-nav a:hover { text-shadow: 0 0 3px white; background-color: #9C0825; }
+
+#main-nav .active:link, 
+#main-nav .active:visited { padding: 10px 25px; background-color: #EBD4CB; border-radius: 2px; color: black; text-shadow: 0 0 1px black; }
 
 @media screen and (max-width: 700px) { #main-nav li { padding: 20px 10px; } }
 @media screen and (max-width: 600px) { #main-nav li { padding: 20px 5px; } }
@@ -73,11 +101,7 @@ body { background-color: #890620; }
 /* ABOUT */
 
 .about { margin: 20px 0; padding: 20px; background-color: #E3E3DA; }
-.about img { width: 100%; box-shadow: 0 0 10px black; }
-.about a:link, .about a:visited { color: #D60000; }
-.about { font-family: 'Open Sans', sans-serif; }
-.about h2 { margin: 10px 0; font-size: 27px; font-weight: bolder; }
-.about p { margin-bottom: 20px; font-size: 22px; }
+.about img { width: 100%; }
 
 @media screen and (max-width: 1250px) {
 	.about { padding: 10px; }
@@ -188,3 +212,18 @@ body { background-color: #890620; }
 .pg-product-container img { width: 100%; box-sizing: border-box; box-shadow: 0 0 5px black; }
 .pg-product-desc { font-family: 'Open Sans', sans-serif; }
 .pg-product-price { font-family: 'Lato', sans-serif; font-size: 25px; font-weight: bolder; }
+
+/* ############################################################### */
+/*                          ABOUT US PAGE                          */
+/* ############################################################### */
+
+.about-page .col-left { width: 75%; }
+.about-page .col-right { width: 23%; }
+
+.about-page img { width: 100%; }
+
+@media screen and (max-width: 850px) {
+	.about-page .side-img { display: none; }
+	.about-page .col-left { width: 90%; }
+	.about-page .col-right { width: 0; }
+}
