@@ -172,3 +172,19 @@ body { background-color: #890620; }
 
 #copyrights { text-align: center; padding: 10px; background: rgba(0,0,0,.3); color: white; font-family: 'Josefin Slab', serif; font-size: 19px; }
 #copyrights a:link, #copyrights a:visited { color: #D60000; text-decoration: none; text-shadow: 0 0 3px black; }
+
+/* ############################################################### */
+/*                          PRODUCTS PAGE                          */
+/* ############################################################### */
+
+#pg-products { text-align: center; }
+.pg-product-container { display: inline-block; width: 30%; margin-bottom: 20px; }
+
+@media screen and (max-width: 850px) { .pg-product-container { width: 45%; } }
+@media screen and (max-width: 700px) { .pg-product-container { width: 90%; } }
+
+.pg-product-container h2 { font-family: 'Josefin Slab', serif; font-size: 32px; }
+.pg-product-img-container {  padding: 15px; }
+.pg-product-container img { width: 100%; box-sizing: border-box; box-shadow: 0 0 5px black; }
+.pg-product-desc { font-family: 'Open Sans', sans-serif; }
+.pg-product-price { font-family: 'Lato', sans-serif; font-size: 25px; font-weight: bolder; }
