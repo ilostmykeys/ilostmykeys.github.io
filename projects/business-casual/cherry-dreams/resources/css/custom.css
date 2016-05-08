@@ -8,7 +8,7 @@ body { background-color: #890620; }
 body { font-family: 'Open Sans', sans-serif; }
 body a:link, .about a:visited { color: #D60000; }
 h2 { margin: 10px 0; font-size: 27px; font-weight: bolder; }
-p { margin-bottom: 20px; font-size: 22px; }
+p { margin-bottom: 20px; font-size: 19px; }
 img { box-shadow: 0 0 10px black; }
 
 @media screen and (max-width: 1200px) {
@@ -237,6 +237,6 @@ img { box-shadow: 0 0 10px black; }
 }
 @media screen and (max-width: 850px) {
 	.about-page .side-img { display: none; }
-	.about-page .col-left { width: 90%; }
+	.about-page .col-left { width: 100%; }
 	.about-page .col-right { width: 0; }
 }
