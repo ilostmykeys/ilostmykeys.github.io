@@ -55,7 +55,7 @@
 </head>
 <body>
 
-	<div id="page-container">
+	<div id="page-container" style="height: 100%; position: relative;">
 		
 		<section id="page-header">
 			<header>
@@ -87,7 +87,7 @@
 		</main>
 		<!-- / GROUP CONTENT -->
 
-		<footer id="page-footer">
+		<footer id="page-footer" style="position: absolute; bottom: 0; width: 100%;">
 			<div id="footer-content-container">
 					
 				<div class="footer-content footer-nav">
@@ -132,14 +132,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 	<script src="resources/js/custom.js"></script>
 	<script>
-		$('.footer-newsletter>form').validate({
-			rules: {
-				email: {
-					required: true
-				}
-			}
-		});
-
+	
 		var map = L.map('map').setView([38.07350,23.80868], 16);
 
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
