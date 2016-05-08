@@ -7,4 +7,12 @@ $(document).ready(function () {
 		event.preventDefault();
 	});
 
+	$('.footer-newsletter>form').validate({
+		rules: {
+			email: {
+				required: true
+			}
+		}
+	});
+
 });
