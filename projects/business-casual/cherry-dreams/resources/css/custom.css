@@ -94,9 +94,9 @@ img { box-shadow: 0 0 10px black; }
 
 #slider .caption { position: relative; }
 #slider p {
-	display: inline-block;
+	display: block;
 	position: absolute;
-	bottom: 50px;
+	bottom: 10px;
 	left: 20px;
 	z-index: 99;
 	padding: 10px 40px;
@@ -189,9 +189,6 @@ img { box-shadow: 0 0 10px black; }
 	border-radius: 1px;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
-/*	display: table-cell;
-	vertical-align: bottom;
-	width: 100%;*/
 }
 #footer-content-container { padding: 15px; }
 .footer-content { padding: 10px; display: inline-block; margin: 0 20px 0 0; }
