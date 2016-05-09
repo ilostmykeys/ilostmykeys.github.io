@@ -57,6 +57,9 @@ img { box-shadow: 0 0 10px black; }
 #page-logo { line-height: 0; padding: 20px; font-size: 33px; font-family: 'Pacifico', cursive; }
 #page-logo-sub { margin: 0 0 10px 80px; line-height: 15px; font-size: 20px; font-family: 'Handlee', cursive; }
 
+@media screen and (max-width: 750px)  {#page-logo-sub { margin: 0 0 10px 0px; : 20px; } }
+@media screen and (max-width: 750px) { #page-header header { text-align: center; } }
+
 /* NAVIGATION */
 
 #main-nav {
