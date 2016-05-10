@@ -4,6 +4,7 @@
 * { margin: 0; padding: 0; border: 0; }
 html, body { width: 100%; height: 100%; }
 body { background-color: #890620; }
+header, nav, article, footer, section, aside, figure, figcaption, main { display: block; }
 
 body { font-family: 'Open Sans', sans-serif; }
 body a:link, .about a:visited { color: #D60000; }
@@ -112,9 +113,8 @@ img { box-shadow: 0 0 10px black; }
 
 /* / responsiveslides */
 
-.caption { }
 #slider { box-shadow: 0 0 10px black; }
-#slider p {
+#slider .caption {
 	margin: 15px;
 	display: inline-block;
 	position: absolute;
@@ -127,15 +127,16 @@ img { box-shadow: 0 0 10px black; }
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
+	word-wrap: break-word;
 	box-shadow: 0 0 4px black;
 }
 
-@media screen and (max-width: 1150px) { #slider p { padding: 10px; } }
+@media screen and (max-width: 1150px) { #slider .caption { padding: 10px; } }
 @media screen and (max-width: 800px) { 
 	#slider img  { margin-bottom: 10px; }
-	#slider p {
+	#slider .caption {
 		margin: 0 0 10px 0;
-		display: inline-block;
+		display: block;
 		box-sizing: border-box;
 		width: 100%;
 		height: 100px;
@@ -148,7 +149,6 @@ img { box-shadow: 0 0 10px black; }
 		font-size: 20px;
 		box-shadow: 0 0 0;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
@@ -250,13 +250,14 @@ img { box-shadow: 0 0 10px black; }
 #newsletter-email { padding: 3px 7px; }
 #newsletter-submit-btn { padding: 0 20px; cursor: pointer; transition: all .3s ease-in-out; background-color: #C9C9C9; line-height: 18px; }
 #newsletter-submit-btn:hover { background-color: #545454; color: white; }
-#newsletter-email-error { display: block; font-family: 'Roboto Condensed', sans-serif; color: white; position: absolute; }
+#newsletter-email-error { position: absolute; display: block; font-family: 'Roboto Condensed', sans-serif; color: white; }
 
 @media screen and (max-width: 550px) {
 	#footer-content-container { padding: 15px;  text-align: center; }
 	.footer-content { width: 80%; padding: 0; margin-bottom: 10px; text-align: left; }
 	#newsletter-email { display: block; width: 100%; } 
 	#newsletter-submit-btn { display: block; width: 100%; margin: 3px 0; }
+	#newsletter-email-error { bottom: -20px; }
 }
 
 #copyrights { text-align: center; padding: 10px; background: rgba(0,0,0,.3); color: white; font-family: 'Josefin Slab', serif; font-size: 19px; margin: 0; }
