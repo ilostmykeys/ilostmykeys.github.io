@@ -15,4 +15,8 @@ $(document).ready(function () {
 		}
 	});
 
+	$('#nav-toggle').click(function(){
+		$('#main-nav ul').toggle('fast');
+	});
+
 });

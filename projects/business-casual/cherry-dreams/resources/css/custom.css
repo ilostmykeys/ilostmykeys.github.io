@@ -54,9 +54,9 @@ img { box-shadow: 0 0 10px black; }
 
 /* PAGE LOGO */
 
-#page-header header { padding: 10px; text-shadow: 2px 2px 4px rgba(137,6,32,.8); }
-#page-logo { line-height: 0; padding: 20px; font-size: 33px; font-family: 'Pacifico', cursive; }
-#page-logo-sub { margin: 0 0 10px 80px; line-height: 15px; font-size: 20px; font-family: 'Handlee', cursive; }
+#page-header header { padding: 20px; text-shadow: 2px 2px 4px rgba(137,6,32,.8); }
+#page-logo { line-height: 0; padding: 5px 20px; font-size: 33px; font-family: 'Pacifico', cursive; }
+#page-logo-sub { margin: 0 0 10px 80px; line-height: 0px; font-size: 20px; font-family: 'Handlee', cursive; }
 
 @media screen and (max-width: 750px)  {#page-logo-sub { margin: 0 0 10px 0px; : 20px; } }
 @media screen and (max-width: 750px) { #page-header header { text-align: center; } }
@@ -86,12 +86,16 @@ img { box-shadow: 0 0 10px black; }
 #main-nav .active:link, 
 #main-nav .active:visited { padding: 10px 25px; background-color: #EBD4CB; border-radius: 2px; color: black; text-shadow: 0 0 1px black; }
 
+#main-nav #nav-toggle { display: none; width: 100%; padding: 25px 0 10px 0; text-align: center; color: white; }
+
 @media screen and (max-width: 700px) {
 	#main-nav a:link, #main-nav a:visited { padding: 10px 15px; }
 }
 @media screen and (max-width: 550px) { 
+	#main-nav ul { display: none; }
 	#main-nav li { display: block; text-align: center; }
 	#main-nav li:first-of-type { margin-left: 0px; }
+	#main-nav #nav-toggle { display: inline-block; }
 }
 
 /* SLIDER */
