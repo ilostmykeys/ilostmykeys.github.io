@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
 	// DELAY STYLISH LINKS FROM REDIRECTING TO THE GIVEN URL 
@@ -21,9 +22,14 @@ $(document).ready(function () {
 		}
 	});
 
+	// NAVIGATION TOGGLE
+
 	$('#nav-toggle').click(function(){
 		$('#main-nav ul').toggle('fast');
+		$('#nav-toggle').toggleClass('small');
 	});
+
+
 
 	// CHECK IF WINDOW'S WIDTH IS GREATERT THAN 550;
 	// PREVENTS MENU FROM STAYING HIDDEN AFTER CHANGING VIEWPORT'S WIDTH.
@@ -35,5 +41,6 @@ $(document).ready(function () {
 			$('#main-nav ul').show('fast');
 		}
 	});
+
 
 });
