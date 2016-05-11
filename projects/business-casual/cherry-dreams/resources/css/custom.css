@@ -86,7 +86,7 @@ img { box-shadow: 0 0 10px black; }
 #main-nav .active:link, 
 #main-nav .active:visited { padding: 10px 25px; background-color: #EBD4CB; border-radius: 2px; color: black; text-shadow: 0 0 1px black; }
 
-#main-nav #nav-toggle { display: none; width: 100%; padding: 25px 0 10px 0; text-align: center; color: white; cursor: pointer; }
+#main-nav #nav-toggle { display: none; width: 100%; padding: 25px 0 10px 0; text-align: center; color: white; cursor: pointer; border-bottom: 1px solid #FF527D; }
 
 @media screen and (max-width: 700px) {
 	#main-nav a:link, #main-nav a:visited { padding: 10px 15px; }
@@ -250,17 +250,16 @@ img { box-shadow: 0 0 10px black; }
 .social-img { width: 35px; }
 .footer-social h3 { position: relative; top: -11px;  }
 
-#newsletter-email, #newsletter-submit-btn { height: 50px; font-size: 17px; }
-#newsletter-email { padding: 3px 7px; }
-#newsletter-submit-btn { padding: 0 20px; cursor: pointer; transition: all .3s ease-in-out; background-color: #C9C9C9; line-height: 18px; }
+#newsletter-email      { height: 50px; padding: 0 10px; }
+#newsletter-submit-btn { height: 50px; padding: 0 20px; cursor: pointer; background-color: #C9C9C9; transition: all .3s ease-in-out; }
 #newsletter-submit-btn:hover { background-color: #545454; color: white; }
+
 #newsletter-email-error { position: absolute; display: block; font-family: 'Roboto Condensed', sans-serif; color: white; }
 
 @media screen and (max-width: 550px) {
-	#footer-content-container { padding: 15px;  text-align: center; }
-	.footer-content { width: 80%; padding: 0; margin-bottom: 10px; text-align: left; }
-	#newsletter-email { display: block; width: 100%; } 
-	#newsletter-submit-btn { display: block; width: 100%; margin: 3px 0; }
+	.footer-content { width: 100%; padding: 10px; margin-bottom: 10px; text-align: left; }
+	#newsletter-email { display: inline-block; width: 90%; margin: 0 auto; box-sizing: border-box; text-align: center; }
+	#newsletter-submit-btn { display: inline-block; width: 90%; margin: 3px auto; }
 	#newsletter-email-error { bottom: -20px; }
 }
 
