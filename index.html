@@ -38,6 +38,7 @@
 		document.createElement('article');
 		document.createElement('aside');
 		document.createElement('footer');
+		document.createElement('main');
 	</script>
 	<![endif]-->
 
@@ -47,9 +48,10 @@
 	<!-- FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<!-- font-family: 'Poiret One', cursive; -->
-	<link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>    <!-- font-family: 'Comfortaa', cursive; -->
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
 	<!-- font-family: 'Comfortaa', cursive; -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!-- font-family: 'Open Sans', sans-serif; -->
 
 	<!-- OTHER -->
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
@@ -57,6 +59,18 @@
 
 </head>
 <body>
+
+<!-- popup -->
+
+<div id="popup">
+	<div id="popup-overlay"></div>
+	<div id="popup-content">
+		<div id="popup-close">X</div>
+		<p>This website is currently <span class="red">under construction</span>. Watch your steps !</p>
+	</div>
+</div>
+
+<!-- / popup -->
 
 	<div id="page-container">
 
@@ -129,9 +143,7 @@
 	<!-- / PAGE CONTAINER -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script type="text/javascript">
-
-	</script>
+	<script type="text/javascript" src="resources/js/custom.js"></script>
 
 </body>
 </html>
