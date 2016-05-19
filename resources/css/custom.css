@@ -7,6 +7,13 @@
 	padding: 0;
 }
 
+/* HTML5 SEMANTIC ELEMENTS */
+
+header, nav, section,
+article, aside, footer, main {
+	display: block;
+}
+
 /* BASIC LAYOUT */
 
 body {
@@ -15,6 +22,55 @@ body {
 .red {
 	color: red;
 }
+
+/* UNDER CONSTRUCTION - POPUP */
+
+#popup {
+	display: none;
+	transition: all .2s ease-in-out;
+}
+#popup-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+#popup-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: rgba(255,255,255,.8);
+	width: 600px;
+	height: 200px;
+	margin-left: -300px; /*Half the value of width to center div*/
+	margin-top: -100px; /*Half the value of height to center div*/
+	z-index: 200;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+#popup-content p {
+	padding: 75px 20px;
+}
+#popup-close {
+	position: absolute;
+	right: 0;
+	margin: 30px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+	#popup-content {
+		width: 400px;
+		margin-left: -200px;
+	}
+}
+
 /* LOGO */
 
 #page-logo {
@@ -112,6 +168,7 @@ body {
 	overflow: hidden;
 	background: black;
 	position: relative;
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
 }
 @media screen and (max-width: 1200px) {
 	.portfolio-item {
