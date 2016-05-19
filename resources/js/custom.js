@@ -6,7 +6,7 @@ $(document).ready(function() {
 	
 	timer = setTimeout(function(){
 		$('#popup').css('display','block');
-	}, 3000);
+	}, 1000);
 	
 	// CLOSE POPUP ON CLICK
 	
