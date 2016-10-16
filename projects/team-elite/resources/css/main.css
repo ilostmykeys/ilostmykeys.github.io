@@ -53,73 +53,83 @@ img {
 	text-decoration: none;
 }
 
-/* ================ */
-/*    INDEX PAGE    */
-/* ================ */
+.backTop {
+	display: none;
+	position: fixed;
+	padding: 5px;
+	bottom: 10px;
+	right: 10px;
+	max-width: 75px;
+	max-height: 75px;
+	cursor: pointer;
+	z-index: 99;
+}
+
+/* / Superpowers End */
 
 #page-container.index-page {
 	width: 100%;
 	text-align: center;
 }
 
-/* MAIN NAVIGATION */
+/* HEADER */
 
 #main-header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-	padding: 20px;
-	box-sizing: border-box;
-	background: #000;
 	position: relative;
-}
-#main-header:after {
-	content: '';
-	display: table;
-	clear: both;
+	width: 100%;
+	padding: 15px 0;
+	background-color: #000;
+
+	/* HEADER ELEMENTS FONT SIZE */
+	font-size: 1.2em;
+
 }
 
-/* MAIN NAVIGATION - INDEX */
+/* HEADER - INDEX PARALLAX */
 
 #main-header.index-page {
 	position: absolute;
-	background: #000;
-	background: rgba(0,0,0,.8);
+	background-color: #000;
+	background-color: rgba(0,0,0,.8);
+}
+
+/* HEADER - LOGO & MENU LINKS STYLING */
+
+#main-header a:link,
+#main-header a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* MAIN LOGO */
+
+#logo-container,
+#logo-container h2 {
+	display: inline-block;
+}
+#logo-container {
+	padding: 0 20px;
+}
+
+/* MAIN NAVIGATION */
+
+#main-nav {
+	margin-left: 20px;
+}
+#main-nav,
+#main-nav li {
+	display: inline-block;
+	padding: 0 5px;
+}
+#main-nav li {
+	list-style: none;
 }
 
 /* MAIN NAVIGATION - LOGO / NAVIGATION POSITIONING */
 
-#logo-container {
-	width: 300px;
-	float: left;
-}
-#main-nav {
-	float: left;
-}
-#main-nav li {
-	display: inline-block;
-}
-
 /* MAIN NAVIGATION - LOGO STYLING */
 
-#logo-container h2 {
-	font-size: 1.6em;
-	letter-spacing: 1.4px;
-}
-
 /* MAIN NAVIGATION - NAVIGATION STYLING */
-
-#main-nav li {
-	margin-right: 20px;
-}
-#main-header a:link,
-#main-header a:visited {
-	font-size: 1.1em;
-	color: white;
-	text-decoration: none;
-}
 
 /* MAIN NAVIGATION TOGGLER */
 
@@ -132,7 +142,7 @@ img {
     text-transform: uppercase;
     border-radius: 5px;
     border: 2px solid #fff;
-    top: 20px;
+    top: 13px;
     right: 20px;
     background-color: #000;
     background-color: rgba(0,0,0,.5);
@@ -433,26 +443,6 @@ footer p:after {
 	margin: 12px 0;
 }
 
-/* -- -- --  -- -- -- */
-/* --  ABOUT PAGE  -- */
-/* -- -- --  -- -- -- */
-/*
-#about-page-img {
-    width: 100%;
-    margin: 20px 0;
-}
-#about-text {
-    text-align: center;
-    font-size: 125%;
-}
-#about-text h2,
-#about-text h3 {
-    margin: 20px 0;
-}
-#about-text p {
-    margin: 10px 0;
-}
-
 /* ========================================= */
 /*               MEDIA QUERIES               */
 /* ========================================= */
@@ -467,30 +457,6 @@ footer p:after {
 
 }
 
-@media(max-width: 1100px) {
-
-	/* HEADER / NAVIGATION */
-
-	#main-header #logo-container {
-		width: 250px;
-	}
-
-}
-
-@media(max-width: 900px) {
-
-	/* HEADER / NAVIGATION */
-
-	#main-header {
-		font-size: 0.9em;
-	}
-
-	#main-header #logo-container {
-		width: 220px;
-	}
-
-}
-
 @media(max-width: 835px) {
 
 	/* GALLERY PAGE */
@@ -499,42 +465,6 @@ footer p:after {
 		width: 50%;
 	}
 
-}
-@media(max-width: 820px) {
-
-	/* HEADER / NAVIGATION - MAIN NAVIGATION BREAK POINT */
-
-	#main-nav #toggle-nav {
-		display: inline-block;
-	}
-
-	#main-header ul {
-		display: none;
-	}
-
-	#main-header {
-		display: block;
-		transition: all .2s ease-in-out;
-	}
-
-	#main-header #logo-container {
-		float: none;
-		display: block;
-		width: 100%;
-	}
-	#main-header #main-nav {
-		float: none;
-		display: block;
-		width: 100%;
-	}
-
-	#main-header #main-nav li {
-		display: block;
-		font-size: 1.3em;
-		width: 100%;
-		text-align: center;
-		margin-top: 10px;
-	}
 }
 
 @media(max-width: 780px) {
@@ -549,6 +479,46 @@ footer p:after {
 		display: block;
 	}
 
+}
+
+/* NAVIGATION BREAK POINT */
+
+@media(min-width: 670px) {
+	/* Prevent navigation from going dispay: block */
+	#logo-container,
+	#main-nav,
+	#main-nav ul,
+	#main-nav li {
+		display: inline-block!important;
+	}
+}
+@media(max-width: 670px) {
+
+	/* MAIN NAVIGATION */
+
+	.index-page #main-nav {
+		background-color: #000;
+		background-color: rgba(0,0,0,.8);
+	}
+	#main-nav {
+		box-sizing: border-box;
+		display: none;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		background-color: #000;
+		background-color: rgba(0,0,0,.9);
+		margin: 14.5px 0;
+	}
+	#main-nav li {
+		display: block;
+		font-size: 1.2em;
+		padding: 9px;
+	}
+
+	#toggle-nav {
+		display: inline-block;
+	}
 }
 
 @media(max-width: 550px) {
