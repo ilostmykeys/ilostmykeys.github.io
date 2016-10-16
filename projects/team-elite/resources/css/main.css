@@ -42,7 +42,7 @@ img {
     text-transform: uppercase;
     background-color: #000;
     color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 .red {
 	color: red;
@@ -146,7 +146,7 @@ img {
     right: 20px;
     background-color: #000;
     background-color: rgba(0,0,0,.5);
-    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 /* INDEX PARALLAX */
@@ -160,13 +160,13 @@ img {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 /* INDEX ABOUT */
 
 #index-about {
-	width: 80%;
+	width: 70%;
 	margin: 40px auto;
 }
 
@@ -212,7 +212,7 @@ img {
 
 #index-services figure img {
 	width: 100%;
-	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 /* INDEX SERVICES - HEADER */
@@ -265,7 +265,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     background-color: black;
-    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
 	margin-top: auto;
 }
 footer p {
@@ -299,8 +299,9 @@ footer p:after {
 /* SERVICE TEXT */
 
 .service p {
-	margin: 20px 0;
+	margin: 20px auto;
 	font-size: 1.2em;
+	width: 85%;
 }
 
 /* SERVICE IMAGE */
@@ -310,7 +311,7 @@ footer p:after {
 }
 .service-img img {
 	box-shadow: 0 0 4px #B5B5B5;
-	box-shadow: 0 0 4px rgba(0,0,0,.7);
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
 }
 
 /* =================== */
@@ -358,7 +359,7 @@ footer p:after {
 }
 .gallery-section figure img {
 	height: 230px;
-	box-shadow: 0 0 7px rgba(0,0,0,.3);
+	box-shadow: 0 0 7px rgba(0,0,0,.2);
 	transition: all .3s ease-in-out;
 }
 .gallery-section figure img:hover {
@@ -389,7 +390,7 @@ footer p:after {
 }
 
 #contact-page-container .contact-paragraph p {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 	font-size: 1.2em;
 }
@@ -411,7 +412,7 @@ footer p:after {
 #contact-page-image img{
 	max-width: 180px;
 	border-radius: 50%;
-	box-shadow: 0 0 10px rgba(0,0,0,.4);
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 #contact-page-container .contact-info p {
@@ -430,7 +431,7 @@ footer p:after {
 #about-text {
 	text-align: center;
 	font-size: 1.2em;
-	max-width: 90%;
+	max-width: 75%;
 	margin: 40px auto;
 }
 
