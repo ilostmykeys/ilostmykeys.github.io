@@ -232,7 +232,7 @@ img {
 #index-services .service-more a:after{
     display: block;
     height: 1px;
-    width: 145px;
+    width: 85px;
     margin: 0 auto;
     border-bottom: 1px solid #000;
     border-bottom: 1px solid rgba(0,0,0,.2);
@@ -476,8 +476,11 @@ footer p:after {
 
 	#index-services-container figure {
 		width: 80%;
-		margin: 0 auto;
+		margin: 0 auto 15px auto;
 		display: block;
+	}
+	#index-services-container figcaption {
+		margin-bottom: 10px;
 	}
 
 }
