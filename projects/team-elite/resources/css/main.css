@@ -588,6 +588,7 @@ footer p:after {
 	}
 
 	#about-text {
+		text-align: left;
 		max-width: 95%;
 	}
 
