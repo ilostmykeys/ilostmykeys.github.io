@@ -57,8 +57,8 @@ img {
 	display: none;
 	position: fixed;
 	padding: 5px;
-	bottom: 10px;
-	right: 10px;
+	bottom: 3px;
+	right: 3px;
 	max-width: 75px;
 	max-height: 75px;
 	cursor: pointer;
@@ -458,6 +458,22 @@ footer p:after {
 
 }
 
+@media(max-width: 880px) {
+
+	#index-about {
+		width: 80%;
+	}
+
+	#contact-page-container .contact-paragraph p {
+		width: 80%;
+	}
+
+	#about-text {
+		max-width: 85%;
+	}
+
+}
+
 @media(max-width: 835px) {
 
 	/* GALLERY PAGE */
@@ -475,12 +491,30 @@ footer p:after {
 	}
 
 	#index-services-container figure {
-		width: 80%;
+		width: 85%;
 		margin: 0 auto 15px auto;
 		display: block;
 	}
 	#index-services-container figcaption {
 		margin-bottom: 10px;
+	}
+
+	#index-about {
+		text-align: left;
+		width: 95%;
+	}
+
+	.service p {
+		text-align: left;
+		width: 95%;
+	}
+
+	#contact-page-container .contact-paragraph p {
+		width: 95%;
+	}
+
+	#about-text {
+		max-width: 95%;
 	}
 
 }
@@ -527,10 +561,34 @@ footer p:after {
 
 @media(max-width: 550px) {
 
-	/* GALLERY PAGE */
-
 	.gallery-section figure {
 		width: 100%;
+	}
+
+	#index-about {
+		text-align: left;
+		width: 95%;
+	}
+
+	#index-services-container figure {
+		width: 90%;
+	}
+
+	.service p {
+		text-align: left;
+		width: 95%;
+	}
+	#contact-page-container .contact-paragraph {
+		width: 95%;
+		text-align: left;
+		margin: 0 auto;
+	}
+	#contact-page-container .contact-paragraph p {
+		margin: 0;
+	}
+
+	#about-text {
+		max-width: 95%;
 	}
 
 }
