@@ -557,6 +557,12 @@ footer p:after {
 	#toggle-nav {
 		display: inline-block;
 	}
+
+	#about-text {
+		text-align: left;
+		max-width: 95%;
+	}
+	
 }
 
 @media(max-width: 550px) {
@@ -585,11 +591,6 @@ footer p:after {
 	}
 	#contact-page-container .contact-paragraph p {
 		margin: 0;
-	}
-
-	#about-text {
-		text-align: left;
-		max-width: 95%;
 	}
 
 }
