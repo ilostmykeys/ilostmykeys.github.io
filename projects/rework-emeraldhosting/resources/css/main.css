@@ -260,6 +260,12 @@ textarea {
 #products-index .product-plan-top .plan-header {
     top: -33px;
 }
+#products-index .plan-price {
+    font-size: 155%;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
 .choose-plan {
     width: 110px;
     margin: 60px auto 10px auto;
